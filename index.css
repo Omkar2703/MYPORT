@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: black;
+}
+
+.container {
+  max-width: 1050px;
+  width: 90%;
+  margin: auto;
+}
+
+.navbar {
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(238, 130, 238, 0.846);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 62px;
+}
+
+.navbar .menu-items {
+  display: flex;
+}
+
+.navbar .nav-container li {
+  list-style: none;
+}
+
+.navbar .nav-container a {
+  text-decoration: none;
+  color: violet;
+  font-weight: 500;
+  font-size: 1.7rem;
+  padding: 0.7rem;
+}
+
+.navbar .nav-container a:hover{
+    font-weight: bolder;
+}
+
+.nav-container {
+  display: block;
+  position: relative;
+  height: 60px;
+}
+
+.nav-container .checkbox {
+  position: absolute;
+  display: block;
+  height: 32px;
+  width: 32px;
+  top: 20px;
+  left: 20px;
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.nav-container .hamburger-lines {
+  display: block;
+  height: 26px;
+  width: 32px;
+  position: absolute;
+  top: 17px;
+  left: 20px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nav-container .hamburger-lines .line {
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+  background: white;
+}
+
+.nav-container .hamburger-lines .line1 {
+  transform-origin: 0% 0%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line2 {
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line3 {
+  transform-origin: 0% 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar .menu-items {
+  padding-top: 120px;
+  box-shadow: inset 0 0 2000px black;
+  height: 100vh;
+  width: 100%;
+  transform: translate(-150%);
+  display: flex;
+  flex-direction: column;
+  margin-left: -40px;
+  padding-left: 50px;
+  transition: transform 0.3s ease-in-out;
+  text-align: center;
+}
+
+.navbar .menu-items li {
+  margin-bottom: 1.2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.logo {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  font-size: 1.2rem;
+}
+
+.logo h1{
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-container input[type="checkbox"]:checked ~ .menu-items {
+  transform: translateX(0);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+  transform: rotate(45deg);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+  transform: scaleY(0);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+  transform: rotate(-45deg);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .logo{
+  display: none;
+}
+.introContainer{
+    max-width: 1050px;
+    width: 90%;
+    margin: auto;
+    color: white;
+    margin-top: 157px;
+    text-align: center;
+    font-size: 20px;
+}
+.knowMore{
+    text-align: center;
+    margin-top: 30px;
+}
+.knowMore input{
+    height: 60px;
+    width: 140px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: violet;
+    border: 2px solid rgba(196, 0, 196, 0.718);
+    border-radius: 2rem;
+}
+.knowMore input:hover{
+  background-color: black;
+  color: violet;
+}
+.Resume{
+  text-align: center;
+  margin-top: 30px;
+}
+.Resume input{
+  height: 60px;
+  width: 140px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: violet;
+  border: 2px solid rgba(196, 0, 196, 0.718);
+  border-radius: 2rem;
+}
+.Resume input:hover{
+  background-color: black;
+  color: violet;
+}
+.omkar{
+color: violet;
+}
+.card {
+  box-shadow: 0 4px 8px 0 violet;
+  transition: 0.3s;
+  width: 70%;
+  border-radius: 5px;
+  color: white;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 60px;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 violet;
+}
+.container {
+  padding: 2px 16px;
+}
+.card a{
+  text-decoration: none;
+  color: white;
+}
+.container h4{
+  color: violet;
+}
+.form{
+  text-align: center;
+  margin-top: 100px;
+  height: 500px;
+}
+.col-25{
+  color: white;
+  font-weight: bold;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid violet;
+  border-radius: 2rem;
+  resize: vertical;
+}
+input[type=submit] {
+  background-color: violet;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  border: 2px solid violet;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+input[type=submit]:hover {
+  background-color: black;
+  color: violet;
+}
+.aboutContainer{
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.aboutContainer h1{
+  color: violet;
+}
+.aboutContainer h3{
+  color: rgba(238, 130, 238, 0.832);
+}
+.aboutContainer p{
+  color: white;
+}
+.Resume img{
+  width: 40px;
+  height: 40px;
+}
+.submit{
+  background-color: violet;
+  border-radius: 2rem;
+}
+.submit:hover{
+  background-color: black;
+  border: 2px solid violet;
+}
+.submit a:hover{
+  color: violet;
+}
+.submit a{
+  text-decoration: none;
+  color: white;
+}
+.selfImg img{
+  border: 4px solid violet;
+}
